@@ -6,4 +6,12 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),selene)
 
+$(call add-radio-file-sha1-checked,radio/lk.img,bb15f7074f59095a9935b9b03368e745e70242b8)
+$(call add-radio-file-sha1-checked,radio/md1img.img,d48f73cbc44df186b7b2e143ca9596f169b9f395)
+$(call add-radio-file-sha1-checked,radio/preloader_raw.img,f7cc2d8304859a92350adf738bb508ef71df8584)
+$(call add-radio-file-sha1-checked,radio/scp.img,76d276895e89b4c4a388eb43bab479a1a85dcb48)
+$(call add-radio-file-sha1-checked,radio/spmfw.img,369d8042d3d478ce77ef910b0888a6cc454d5e93)
+$(call add-radio-file-sha1-checked,radio/sspm.img,def9376be555d1ed3d46e8b5472ca05c67917727)
+$(call add-radio-file-sha1-checked,radio/tee.img,34762abf4457a4d14effdc58b73f0c397c4eeef2)
+
 endif
